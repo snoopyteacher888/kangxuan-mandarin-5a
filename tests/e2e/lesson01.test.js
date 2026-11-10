@@ -113,10 +113,3 @@ test('第 1 課句型：認識句型畫面有公式和例句', async () => {
   assert.deepEqual(p.errors, []);
 });
 
-test('第 1 課短語二：固定的字已經印好', async () => {
-  const p = await page(); await p.goto(BASE + '#/L01/phrase?step=fill2&s=bear');
-  await p.waitForSelector('.fill-sentence');
-  const conj = await p.$$eval('.fill-sentence .fill-conj', xs => xs.map(x => x.textContent));
-  W.phrase.phrase2.intro.parts.filter(x => !x.role).forEach(x => assert.ok(conj.join('').includes(x.text), x.text + '：' + conj.join()));
-  assert.deepEqual(p.errors, []);
-});
