@@ -3,3 +3,4 @@ node_modules
 .DS_Store
 .superpowers/
 !tests/fixtures/*.plain.json
+test-results/
