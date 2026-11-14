@@ -2,6 +2,13 @@
    生字、語詞：options 的第一個是正確答案（作答時會打亂）。 */
 (function (root) {
   var d = {
+    /* 三個場景、動作的句子用三張圖（老師要求）：原本的圖 → 第一、二、三張（還沒上傳就先用原本那一張） */
+    multiImg: {
+      'pt-dog-tricks.png': ['pt-dog-tricks-1.png', 'pt-dog-tricks-2.png', 'pt-dog-tricks-3.png'],
+      'pt-big-storm.png': ['pt-big-storm-1.png', 'pt-big-storm-2.png', 'pt-big-storm-3.png'],
+      'pt-kind-girl.png': ['pt-kind-girl-1.png', 'pt-kind-girl-2.png', 'pt-kind-girl-3.png'],
+      'pt-handy-grandpa.png': ['pt-handy-grandpa-1.png', 'pt-handy-grandpa-2.png', 'pt-handy-grandpa-3.png']
+    },
     /* 理解提問的分類（照課本「閱讀理解提問」）：extract 提取訊息、infer 推論訊息、interpret 詮釋整合、evaluate 比較評估。只放題號，不放課文 */
     quizLevels: { qa: 'extract', qb: 'extract', qc: 'extract', qd: 'extract', qe: 'infer', qf: 'infer', qg: 'infer', qh: 'interpret',
       qi: 'interpret', qj: 'evaluate', k1: 'interpret', k2: 'evaluate' },
